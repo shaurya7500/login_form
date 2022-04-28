@@ -17,9 +17,12 @@ export class SignComponent implements OnInit {
   })
   signup(){
     console.warn(this.signupForm.value)
+    localStorage.setItem('signupform', this.signupForm.value);
   }
 
-  constructor() { }
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

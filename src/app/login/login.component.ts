@@ -15,6 +15,7 @@ export class LoginComponent implements OnInit {
   })
   login(){
     console.warn(this.loginForm.value)
+    localStorage.setItem('loginform', this.loginForm.value);
   }
   constructor() { }
 
