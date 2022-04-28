@@ -1,0 +1,24 @@
+<form class="card"  [formGroup]="signupForm" (ngSubmit)="signup()">
+    <div >
+        <h1>Signup Page</h1>
+    </div>
+    <div>
+        <input type="text" placeholder="Enter Full name" name="user" formControlName="Fullname">
+    </div>
+    <br>
+    <div>
+        <input type="text" placeholder="Enter email" name="email" formControlName="email">
+    </div>
+    <br>
+    <div>
+        <input type="text" placeholder="Enter mobile no" name="mobile" formControlName="mobile">
+    </div>
+    <br>
+    <div>
+        <input type="password" placeholder="Enter password" name="password" formControlName="password">
+    </div>
+    <br>
+    <button>Submit</button>
+    <br>
+    <a style=" color:aliceblue; margin-top: 10px" routerLink="/login"> Already registered? click to login </a>
+</form> 

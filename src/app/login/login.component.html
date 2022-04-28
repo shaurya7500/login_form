@@ -1,0 +1,17 @@
+<form class="card" [formGroup]="loginForm" (ngSubmit)="login()">
+    <div >
+        <h1>Login Page</h1>
+        <p>Please enter user name and password</p>
+    </div>
+    <div>
+        <input type="text" placeholder="Enter user name" name="user" formControlName="user">
+    </div>
+    <br>
+    <div>
+        <input type="password" placeholder="Enter password" name="password" formControlName="password">
+    </div>
+    <br>
+    <button>Login</button>
+    <br>
+    <a style=" color:aliceblue; margin-top: 10px" routerLink="/sign"> New user? click to signup</a>
+</form> 
